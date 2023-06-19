@@ -29,7 +29,7 @@ export default class Content extends Component {
             <div className="row">
               {this.glass_arr.map((item, index) => {
                 return (
-                  <div className="col-4 mb-5" key={index}>
+                  <div className="col-md-6 col-lg-4 mb-5" key={index}>
                     <div
                       className={`glasses__item p-3 border border-2 w-75 text-center mx-auto bg-white ${item === this.state.img ? "active" : ""}`}
                       onClick={() => {
