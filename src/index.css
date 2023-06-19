@@ -5,9 +5,52 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-image: url('../public/glassesImage/bg-2.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+}
+
+body::before {
+  content: '';
+  display: block;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+#header {
+  background-color: rgba(0, 0, 0, 0.6);
+  position: relative;
+}
+
+.content__image img:nth-child(2){
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 15%;
+}
+
+.glasses__item {
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+.glasses__item.active {
+  background-color: #ff6b81 !important;
+}
+
+.glasses__item:hover {
+  box-shadow: 2px 2px 5px black;
+  background-color: #ff6b81 !important;
 }

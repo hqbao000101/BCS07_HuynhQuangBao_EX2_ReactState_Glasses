@@ -1,8 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
+import Header from './components/Header';
+import Content from './components/Content';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <h1>React State With Changing Glasses</h1>
+  <>
+    <Header/>
+    <Content/>
+  </>
 );
