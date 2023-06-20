@@ -1,0 +1,65 @@
+[
+    {
+        "id": 1,
+        "price": 30,
+        "name": "GUCCI G8850U",
+        "url": "./glassesImage/v1.png",
+        "desc": "A stemmed glass with a slender bowl and a wide rim. It is typically used for serving cocktails that are served up (without ice)."
+    },
+    {
+        "id": 2,
+        "price": 50,
+        "name": "GUCCI G8759H",
+        "url": "./glassesImage/v2.png",
+        "desc": "A stemmed glass with a shallow bowl and a wide rim. It is typically used for serving cocktails that are frothy or have a lot of foam"
+    },
+    {
+        "id": 3,
+        "price": 30,
+        "name": "DIOR D6700HQ",
+        "url": "./glassesImage/v3.png",
+        "desc": "A tall, stemmed glass that is typically used for serving tall mixed drinks, such as a Mojito or a Gin and Tonic."
+    },
+    {
+        "id": 4,
+        "price": 70,
+        "name": "DIOR D6005U",
+        "url": "./glassesImage/v4.png",
+        "desc": "A smaller version of the cocktail glass. It is typically used for serving smaller cocktails, such as a Manhattan or a Sidecar."
+    },
+    {
+        "id": 5,
+        "price": 40,
+        "name": "PRADA P8750",
+        "url": "./glassesImage/v5.png",
+        "desc": "A tall, narrow glass that is typically used for serving sparkling wine or champagne."
+    },
+    {
+        "id": 6,
+        "price": 60,
+        "name": "PRADA P9700",
+        "url": "./glassesImage/v6.png",
+        "desc": "A large, stemmed glass that is typically used for serving wine."
+    },
+    {
+        "id": 7,
+        "price": 80,
+        "name": "FENDI F8750",
+        "url": "./glassesImage/v7.png",
+        "desc": "A large, hurricane-shaped glass that is typically used for serving tropical drinks, such as a Hurricane or a Mai Tai."
+    },
+    {
+        "id": 8,
+        "price": 100,
+        "name": "FENDI F8500",
+        "url": "./glassesImage/v8.png",
+        "desc": "A stemmed glass with a wide bowl and a flared rim. It is typically used for serving margaritas and other frozen drinks."
+    },
+    {
+        "id": 9,
+        "price": 60,
+        "name": "FENDI F4300",
+        "url": "./glassesImage/v9.png",
+        "desc": "A wine glass without a stem. It is typically used for serving white wine or rosé wine."
+    }
+]

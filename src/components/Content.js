@@ -1,16 +1,23 @@
 import React, { Component } from "react";
+import glassData from "./dataGlasses.json";
 import "../index.css";
 
 export default class Content extends Component {
-  glass_arr = ["v1", "v2", "v3", "v4", "v5", "v6", "v7", "v8", "v9"];
-
   state = {
-    img: "v1",
+    id: 1,
+    price: 30,
+    name: "GUCCI G8850U",
+    url: "./glassesImage/v1.png",
+    desc: "A stemmed glass with a slender bowl and a wide rim. It is typically used for serving cocktails that are served up (without ice).",
   };
 
   changeGlass = (item) => {
     this.setState({
-      img: item,
+      id: item.id,
+      price: item.price,
+      name: item.name,
+      url: item.url,
+      desc: item.desc,
     });
   };
 
@@ -18,27 +25,47 @@ export default class Content extends Component {
     return (
       <>
         <div className="container position-relative">
-          <div className="content__image text-center mb-4 position-relative">
-            <img src="./glassesImage/model.jpg" alt="" className="w-25" />
-            <img
-              src={`./glassesImage/${this.state.img}.png`}
-              alt="Glass Overlay"
-            />
+          <div className="content__top d-flex justify-content-center align-items-center py-5">
+            <div className="content__info text-white">
+              <h2>Brief Details</h2>
+              <table cellPadding={10}>
+                <tbody>
+                  <tr>
+                    <td>Name</td>
+                    <td>{this.state.name}</td>
+                  </tr>
+                  <tr>
+                    <td valign="top">Description</td>
+                    <td>{this.state.desc}</td>
+                  </tr>
+                  <tr>
+                    <td>Price</td>
+                    <td>${this.state.price}</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div className="content__image text-center position-relative">
+              <img src="./glassesImage/model.jpg" alt="Model" />
+              <img src={this.state.url} alt="Glass Overlay" />
+            </div>
           </div>
           <div className="content__glasses bg-light px-5 pt-5">
             <div className="row">
-              {this.glass_arr.map((item, index) => {
+              {glassData.map((item, index) => {
                 return (
                   <div className="col-md-6 col-lg-4 mb-5" key={index}>
                     <div
-                      className={`glasses__item p-3 border border-2 w-75 text-center mx-auto bg-white ${item === this.state.img ? "active" : ""}`}
+                      className={`glasses__item p-3 border border-2 w-75 text-center mx-auto bg-white ${
+                        item.url === this.state.url ? "active" : ""
+                      }`}
                       onClick={() => {
                         this.changeGlass(item);
                       }}
                     >
                       <img
-                        src={`./glassesImage/${item}.png`}
-                        alt={`Glass Pic ${index + 1}`}
+                        src={item.url}
+                        alt={`Glass Pic ${item.id}`}
                         className="w-50"
                       />
                     </div>

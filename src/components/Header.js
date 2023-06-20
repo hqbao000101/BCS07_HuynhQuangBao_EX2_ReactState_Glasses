@@ -7,7 +7,7 @@ export default class Header extends Component {
       <>
         <header id="header">
           <div className="container">
-            <p className="text-center text-white py-3 fs-4 fw-semibold mb-4">TRY GLASSES APP ONLINE</p>
+            <p className="text-center text-white py-3 fs-4 fw-semibold mb-0">TRY GLASSES APP ONLINE</p>
           </div>
         </header>
       </>
